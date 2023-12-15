@@ -1,0 +1,7 @@
+setwd("C:/Users/kaurm/OneDrive/Desktop/cardio folder/cardio")
+data=read.csv("Heart Failure Clinical Records - Heart Failure Clinical Records.csv")
+View(data)
+model=lm(age~platelets,high_blood_pressure,data=data
+summary(model)
+model=lm(age~platelets+high_blood_pressure,data=data)
+summary(model)
